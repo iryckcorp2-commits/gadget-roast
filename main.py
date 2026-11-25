@@ -13,7 +13,11 @@ clock: running the program twice writes a byte-identical file.
 import os
 import sys
 
-# The roast. One line, punch on the last few words.
+# The roast. 133 characters, one line, punch on the last few words.
+# Limit verified from the bounty page and competition API: at most
+# 200 characters (entryFeeUsd null, entryFeesUsd "0.00"). The gate
+# below counts characters with len(), not bytes, matching the
+# bounty wording.
 ENTRY = (
     "My phone hits 1% at 4 p.m. and then survives the whole "
     "evening, so it is not dying, it is just dramatic and "
